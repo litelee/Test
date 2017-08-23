@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSNewHelpController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Installation Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3P4-9y-Yfm">
+                    <rect key="frame" x="20" y="60" width="374" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cYw-ZM-fiK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.56862745100000001" green="0.76078431369999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginicon" translatesAutoresizingMaskIntoConstraints="NO" id="imE-7Z-LqI">
+                    <rect key="frame" x="167" y="111" width="80" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="D9D-PA-cfJ"/>
+                        <constraint firstAttribute="height" constant="100" id="jIO-D8-dbG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the button when the blue led of lock device flashing" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpl-UH-R0z">
+                    <rect key="frame" x="55" y="241" width="304" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8A-q4-hLF">
+                    <rect key="frame" x="132" y="340" width="150" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="P88-52-yJB"/>
+                        <constraint firstAttribute="height" constant="44" id="rMb-RW-ZgC"/>
+                    </constraints>
+                    <state key="normal" title="Cancel" backgroundImage="loginbackimage"/>
+                    <connections>
+                        <action selector="cancelClick:" destination="-1" eventType="touchUpInside" id="AmF-VF-bbP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="imE-7Z-LqI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7cU-nf-klX"/>
+                <constraint firstAttribute="trailing" secondItem="3P4-9y-Yfm" secondAttribute="trailing" constant="20" id="8oi-Rm-Wwf"/>
+                <constraint firstItem="Bpl-UH-R0z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="EWI-Kr-Kou"/>
+                <constraint firstItem="imE-7Z-LqI" firstAttribute="top" secondItem="3P4-9y-Yfm" secondAttribute="bottom" constant="30" id="InA-BJ-KpY"/>
+                <constraint firstItem="3P4-9y-Yfm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Kbf-ai-iJj"/>
+                <constraint firstItem="Bpl-UH-R0z" firstAttribute="top" secondItem="imE-7Z-LqI" secondAttribute="bottom" constant="30" id="Uvm-Tt-FRz"/>
+                <constraint firstItem="c8A-q4-hLF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b6f-XG-9ob"/>
+                <constraint firstItem="c8A-q4-hLF" firstAttribute="top" secondItem="Bpl-UH-R0z" secondAttribute="bottom" constant="60" id="cAQ-Nd-crD"/>
+                <constraint firstItem="3P4-9y-Yfm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="i8C-rK-Kf6"/>
+                <constraint firstAttribute="trailing" secondItem="Bpl-UH-R0z" secondAttribute="trailing" constant="55" id="lEo-7i-nba"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginbackimage" width="212" height="57"/>
+        <image name="loginicon" width="200" height="249"/>
+    </resources>
+</document>
